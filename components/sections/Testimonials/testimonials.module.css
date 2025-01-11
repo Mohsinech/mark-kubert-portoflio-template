@@ -1,0 +1,112 @@
+.testimonials_section {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #f1f1f1;
+  padding: 4rem 0;
+}
+
+.head_container {
+  display: flex;
+  height: fit-content;
+  align-items: start;
+  padding: 0 2.5rem;
+}
+
+.head_label {
+  font-family: "neue montreal", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #171717;
+}
+
+.main_flex_col_container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 0 2.5rem;
+}
+
+.main_flex_col_container_p {
+  width: 60%;
+  font-family: "neue montreal", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+  color: #171717;
+}
+
+.testimonials_grid {
+  display: grid;
+  height: fit-content;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .testimonials_grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonials_section {
+    gap: 3.5rem;
+  }
+
+  .main_flex_col_container_p {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .testimonials_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonials_section {
+    gap: 3rem;
+  }
+
+  .head_label {
+    color: #9ca3af;
+  }
+
+  .main_flex_col_container_p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .testimonials_grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .testimonials_section {
+    padding: 3rem 0;
+  }
+
+  .main_flex_col_container {
+    gap: 3.5rem;
+  }
+
+  .main_flex_col_container_p {
+    font-size: 1rem;
+  }
+
+  .testimonials_grid {
+    gap: 1rem;
+  }
+}

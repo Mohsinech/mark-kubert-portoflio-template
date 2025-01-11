@@ -1,0 +1,19 @@
+.stagger_div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "FormaDJRDisplay", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.stagger_div_span {
+  display: inline-block;
+}
+
+.stagger_div_absolute {
+  position: absolute;
+}

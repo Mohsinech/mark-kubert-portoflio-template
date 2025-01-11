@@ -1,0 +1,131 @@
+.service_section {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #f1f1f1;
+  padding: 4rem 0;
+}
+
+.head_container {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  align-items: start;
+  padding: 0 2.5rem;
+}
+
+.head_label {
+  font-family: "neue montreal", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #171717;
+}
+
+.main_container {
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+  padding: 0 2.5rem;
+}
+
+.left_container {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.left_container_h1 {
+  width: 95%;
+  font-family: "neue montreal", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+  color: #171717;
+}
+
+.right_container {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.right_head_container {
+  font-family: "FormaDJRDisplay", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #6b7280;
+}
+
+.service_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Responsive */
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+  .service_section {
+    gap: 3.5rem;
+  }
+
+  .main_container {
+    flex-direction: column;
+  }
+
+  .left_container {
+    gap: 1rem;
+  }
+
+  .left_container_h1 {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 640px) {
+  .service_section {
+    gap: 3rem;
+  }
+
+  .head_label {
+    color: #9ca3af;
+  }
+
+  .left_container_h1 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main_container {
+    gap: 3.5rem;
+  }
+
+  .left_container {
+    gap: 0.75rem;
+  }
+
+  .left_container_h1 {
+    font-size: 1rem;
+  }
+}

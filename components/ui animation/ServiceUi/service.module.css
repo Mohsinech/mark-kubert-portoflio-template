@@ -1,0 +1,59 @@
+.li_flex_col {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.li_flex_col_h2 {
+  font-family: "neue montreal", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: rgba(23, 23, 23, 0.2);
+}
+
+.li_flex_col_line {
+  height: 2px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: rgba(23, 23, 23, 0.2);
+}
+
+.content {
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.content_p {
+  margin-top: 0.5rem;
+  font-family: "FormaDJRDisplay", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .li_flex_col_h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .content_p {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+  }
+}
+
+@media (max-width: 640px) {
+  .li_flex_col_h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .content_p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

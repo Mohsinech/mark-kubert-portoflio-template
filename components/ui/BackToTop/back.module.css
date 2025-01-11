@@ -1,0 +1,19 @@
+.back_to_top {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 50;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #171717;
+  color: white;
+}
+
+.back_to_top:hover {
+  background-color: rgba(23, 23, 23, 0.8);
+}

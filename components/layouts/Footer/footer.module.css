@@ -1,0 +1,176 @@
+.footer {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #171717;
+  padding: 0 2.5rem;
+  padding-top: 4rem;
+}
+
+.head_container {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  align-items: start;
+}
+
+.head_label {
+  font-family: "neue montreal", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #f1f1f1;
+}
+
+.footer_content_center {
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cta_contact {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.h1 {
+  width: 50%;
+  font-family: "FormaDJRDisplay", sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: #f1f1f1;
+}
+
+.btns_flex_container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bottom_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.first_col {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.label_col_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.h3 {
+  font-family: "neue montreal", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #9ca3af;
+}
+
+.p {
+  font-family: "FormaDJRDisplay", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+
+.social_link_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.social_list {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Responsive */
+
+@media (max-width: 1280px) {
+  .footer_content_center {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer_content_center {
+    height: 40vh;
+    gap: 2.25rem;
+  }
+
+  .h1 {
+    width: 100%;
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .bottom_footer {
+    margin-top: 1rem;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer_content_center {
+    height: 50vh;
+  }
+
+  .cta_contact {
+    gap: 0.5rem;
+  }
+
+  .h1 {
+    text-align: start;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .btns_flex_container {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+
+  .bottom_footer {
+    flex-direction: column;
+  }
+
+  .label_col_content {
+    gap: 0.25rem;
+  }
+
+  .social_link_container {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer_content_center {
+    height: 70vh;
+  }
+
+  .h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}

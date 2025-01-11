@@ -1,0 +1,87 @@
+.toggle {
+  background: transparent;
+  border: 1px solid #171717;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 9999px;
+  overflow: hidden;
+  transform: scaleX(1);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-family: "FormaDJRDisplay", sans-serif;
+}
+
+.toggle:hover {
+  animation: animate-scaleX 0.6s cubic-bezier(0.4, 0, 0, 1);
+  background: transparent;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #171717;
+  transition:
+    transform 0.5s cubic-bezier(0.4, 0, 0, 1),
+    border-radius 0.5s cubic-bezier(0.4, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 50% 0 0;
+  transform: translateY(100%);
+}
+
+.toggle:hover::after {
+  transform: translateY(0%);
+  border-radius: 0;
+}
+
+.toggle span {
+  font-size: 20px;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  color: #171717;
+  z-index: 2;
+}
+
+.toggle span:after {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1);
+  content: attr(data-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 1;
+  transform: translate(-50%, 100%);
+  color: #f1f1f1;
+}
+
+.toggle:hover span:after {
+  transform: translate(-50%, 0);
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+@keyframes animate-scaleX {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.05);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

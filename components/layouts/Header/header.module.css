@@ -1,0 +1,71 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.logo {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.image {
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+/* Mail */
+
+.mail {
+  font-family: "neue montreal", sans-serif;
+  color: #171717;
+  font-size: 1.1rem;
+  letter-spacing: 0.025rem;
+}
+
+.scrolling_div_line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.mail {
+  font-family: "neue montreal", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  color: rgb(23 23 23 / 0.2);
+}
+
+.animated_line {
+  height: 1px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: rgb(23 23 23 / 0.2);
+}
+
+/* Responsive  */
+@media (max-width: 620px) {
+  .header {
+    padding: 0.8rem;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .scrolling_div_line {
+    gap: 0.2rem;
+  }
+
+  .mail {
+    font-size: 0.9rem;
+  }
+}

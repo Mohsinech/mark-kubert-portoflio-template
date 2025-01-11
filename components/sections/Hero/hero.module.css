@@ -1,0 +1,177 @@
+.hero_section {
+  position: relative;
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.hero_right_col {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.h1_div {
+  z-index: 50;
+  overflow: hidden;
+}
+
+.h1 {
+  z-index: 50;
+  font-family: "FormaDJRDisplay", sans-serif;
+  font-size: 160px;
+  font-weight: bold;
+  line-height: 1;
+  color: #171717;
+}
+
+.hero_left_col {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem;
+  padding-top: 9rem;
+}
+
+.intro {
+  width: 80%;
+  font-family: "neue montreal", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #111827;
+}
+
+.scrolling_div_line {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.h2 {
+  font-family: "neue montreal", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: rgb(23 23 23 / 0.2);
+}
+
+.animated_line {
+  height: 1px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: rgb(23 23 23 / 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .hero_section {
+    height: 60vh;
+    flex-direction: column;
+    padding-top: 1.75rem;
+  }
+
+  .hero_right_col {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 180px;
+  }
+
+  .hero_left_col {
+    width: 100%;
+    gap: 2rem;
+    padding: 0 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .p {
+    width: 70%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero_section {
+    height: 60vh;
+  }
+
+  .h1 {
+    font-size: 160px;
+  }
+
+  .intro {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    width: 60%;
+  }
+}
+
+@media (max-width: 820px) {
+  .intro {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero_section {
+    height: fit-content;
+  }
+
+  .h1 {
+    font-size: 5rem;
+    line-height: 1;
+    padding-bottom: 0;
+  }
+
+  .hero_left_col {
+    gap: 1rem;
+  }
+
+  .intro {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .scrolling_div_line {
+    gap: 0.25rem;
+  }
+
+  .h2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .animated_line {
+    height: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero_section {
+    height: fit-content;
+  }
+
+  .h1 {
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  .intro {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}

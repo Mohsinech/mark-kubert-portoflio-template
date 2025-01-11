@@ -1,0 +1,34 @@
+.website {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  overflow: hidden;
+}
+
+.inner_container {
+  position: relative;
+  display: flex;
+  height: 600px;
+  width: 800px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .website {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 620px) {
+  .website {
+    gap: 0;
+  }
+}
