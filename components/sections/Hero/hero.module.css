@@ -28,6 +28,8 @@
   font-weight: bold;
   line-height: 1;
   color: #171717;
+  display: inline-block;
+  transform: translateY(100%);
 }
 
 .hero_left_col {
@@ -46,6 +48,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   color: #111827;
+  opacity: 0;
 }
 
 .scrolling_div_line {

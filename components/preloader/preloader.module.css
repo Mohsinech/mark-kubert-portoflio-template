@@ -1,0 +1,21 @@
+.preloader {
+  position: absolute;
+  width: 100%;
+  height: 102%;
+  background-color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage {
+  overflow: hidden;
+}
+
+.perc {
+  color: #f1f1f1;
+  font-family: "FormaDJRDisplay", sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+  transform: translateY(100%);
+}

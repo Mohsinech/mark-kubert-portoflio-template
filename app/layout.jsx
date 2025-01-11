@@ -3,10 +3,17 @@ import { useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import "@/styles/globals.css";
 import { Footer, Header } from "@/components/layouts";
+import Preloader from "@/components/preloader/Preloader";
+import gsap from "gsap";
 
 export default function RootLayout({ children }) {
   const [isLoading, setIsLoading] = useState(true);
   const lenisRef = useRef(null);
+
+  //
+  useEffect(() => {
+    gsap.fromTo(".next_load", { opacity: 0 }, { opacity: 1, duration: 1 });
+  });
 
   useEffect(() => {
     lenisRef.current = new Lenis({
@@ -26,12 +33,14 @@ export default function RootLayout({ children }) {
     };
   }, []);
 
+  const handlePreloaderComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
     <html lang="en">
       <head>
-        {/* Change the title with your actual name & slug */}
         <title>Mark Kubert — Creative web developer</title>
-        {/* change Favicon src, find: `/public/favicon.ico` */}
         <link rel="icon" type="icon" href="/favicon.ico" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta
@@ -40,11 +49,15 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <>
-          <Header lenisRef={lenisRef} />
-          {children}
-          <Footer lenisRef={lenisRef} />
-        </>
+        {isLoading ? (
+          <Preloader onComplete={handlePreloaderComplete} />
+        ) : (
+          <main className="next_load">
+            <Header lenisRef={lenisRef} />
+            {children}
+            <Footer lenisRef={lenisRef} />
+          </main>
+        )}
       </body>
     </html>
   );

@@ -1,9 +1,11 @@
-<<<<<<< HEAD
+HEAD
+
 # mark-kubert-portoflio-template
-=======
-<<<<<<< HEAD
+
+HEAD
+
 # mark-kubert-portoflio-template
-=======
+
 # **Mark Kubert Portfolio Template**
 
 ### **Thank You for Your Purchase!**
@@ -181,5 +183,6 @@ If you need any help or free setup assistance, feel free to reach out!
 - **Support Hours**: Monday to Friday, 9 AM - 5 PM (GMT)
 
 Thank you again for choosing the **Mark Kubert Portfolio Template**! 🎉
->>>>>>> 4eab9db (Initial commit)
->>>>>>> f5cf26a (upload project)
+
+> > > > > > > 4eab9db (Initial commit)
+> > > > > > > f5cf26a (upload project)
