@@ -1,11 +1,3 @@
-HEAD
-
-# mark-kubert-portoflio-template
-
-HEAD
-
-# mark-kubert-portoflio-template
-
 # **Mark Kubert Portfolio Template**
 
 ### **Thank You for Your Purchase!**
@@ -49,9 +41,7 @@ Before you start, ensure you have these installed:
    ```
 3. Install dependencies:
    ```bash
-   npm install
-   # or
-   yarn install
+   npm install  # or yarn install
    ```
 
 #### **3. Running the Development Server**
@@ -59,9 +49,7 @@ Before you start, ensure you have these installed:
 Start the development server to preview your template locally:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm run dev  # or yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view your portfolio.
@@ -103,11 +91,7 @@ Edit sections in the `/app` folder:
 Animation logic resides in `/components/ui animation`. Tweak or create new effects as needed:
 
 ```javascript
-gsap.from(".hero-title", {
-  opacity: 0,
-  y: -50,
-  duration: 1,
-});
+gsap.from(".hero-title", { opacity: 0, y: -50, duration: 1 });
 ```
 
 #### **4. Component Customization**
@@ -122,23 +106,20 @@ Reusable components are stored in `/components`. Modify these to update site-wid
 You can showcase your work by:
 
 1. Replacing placeholder images in the `/assets/templates/` folder.
-2. Change project data inside `/constants/data.js` file
+2. Change project data inside `/constants/data.js` file.
    Example:
-
-```javascript
-export const Projects = [
-  { img: "/assets/templates/tm-1.jpeg", href: "#tm-1" },
-  { img: "/assets/templates/tm-2.jpeg", href: "#tm-2" },
-  { img: "/assets/templates/tm-3.jpeg", href: "#tm-3" },
-  { img: "/assets/templates/tm-4.jpeg", href: "#tm-4" },
-  { img: "/assets/templates/tm-5.jpeg", href: "#tm-5" },
-];
-```
-
+   ```javascript
+   export const Projects = [
+     { img: "/assets/templates/tm-1.jpeg", href: "#tm-1" },
+     { img: "/assets/templates/tm-2.jpeg", href: "#tm-2" },
+     { img: "/assets/templates/tm-3.jpeg", href: "#tm-3" },
+     { img: "/assets/templates/tm-4.jpeg", href: "#tm-4" },
+     { img: "/assets/templates/tm-5.jpeg", href: "#tm-5" },
+   ];
+   ```
 3. Updating the project details in `/components/layouts/Project.jsx` or equivalent sections.
-4. Providing a **preview URL** for your showcased work in the portfolio.
-
-Example: Add a “View Work” button linked to your preview.
+4. Providing a **preview URL** for your showcased work in the portfolio.  
+   Example: Add a “View Work” button linked to your preview.
 
 ---
 
@@ -148,7 +129,7 @@ Example: Add a “View Work” button linked to your preview.
 
 If you prefer hosting on **Hostinger** or another platform instead of Vercel:
 
-1. **Build the Project**  
+1. **Build the Project**
    Run the following command to create a production-ready build:
 
    ```bash
@@ -162,10 +143,9 @@ If you prefer hosting on **Hostinger** or another platform instead of Vercel:
    - Use Hostinger's **File Manager** or an FTP client to upload the contents of the `/out` folder to your server's public directory.
    - Ensure your hosting environment supports static site deployment.
 
-3. **Domain Configuration**  
-   Set up your domain to point to the hosting platform by updating the DNS records.
-
-For more details, check out [Hostinger Deployment Guide](https://www.hostinger.com/tutorials).
+3. **Domain Configuration**
+   Set up your domain to point to the hosting platform by updating the DNS records.  
+   For more details, check out [Hostinger Deployment Guide](https://www.hostinger.com/tutorials).
 
 ---
 
@@ -183,6 +163,3 @@ If you need any help or free setup assistance, feel free to reach out!
 - **Support Hours**: Monday to Friday, 9 AM - 5 PM (GMT)
 
 Thank you again for choosing the **Mark Kubert Portfolio Template**! 🎉
-
-> > > > > > > 4eab9db (Initial commit)
-> > > > > > > f5cf26a (upload project)
