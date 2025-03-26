@@ -1,11 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import styles from "./back.module.css";
-const BackToTop = ({ lenisRef }) => {
+
+const BackToTop = () => {
+  const lenis = useRef(null);
+
+  useEffect(() => {
+    lenis.current = new Lenis();
+
+    function raf(time) {
+      lenis.current.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   const handleBackToTop = () => {
-    if (lenisRef?.current) {
-      lenisRef.current.scrollTo(0, { duration: 1.2, smooth: true });
+    if (lenis.current) {
+      lenis.current.scrollTo(0, { duration: 1.2, smooth: true });
     }
   };
 

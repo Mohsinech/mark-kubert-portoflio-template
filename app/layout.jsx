@@ -1,41 +1,43 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import Lenis from "@studio-freight/lenis";
+
 import "@/styles/globals.css";
 import { Footer, Header } from "@/components/layouts";
-import Preloader from "@/components/preloader/Preloader";
-import gsap from "gsap";
+import { motion, AnimatePresence } from "framer-motion";
+import Lenis from "lenis";
+import { useEffect, useRef } from "react";
+
+const DURATION = 1;
+const DELAY = 1;
 
 export default function RootLayout({ children }) {
-  const [isLoading, setIsLoading] = useState(true);
   const lenisRef = useRef(null);
 
-  //
   useEffect(() => {
-    gsap.fromTo(".next_load", { opacity: 0 }, { opacity: 1, duration: 1 });
-  });
+    // Initialize Lenis
+    const lenis = new Lenis({
+      smooth: true,
+      lerp: 0.01,
+      duration: 3,
+    });
+    lenisRef.current = lenis;
 
-  useEffect(() => {
-    lenisRef.current = new Lenis({
-      duration: 1.2,
-      smoothWheel: true,
-      smoothTouch: true,
+    lenis.on("scroll", (e) => {
+      console.log("Scroll event:", e);
     });
 
     function raf(time) {
-      lenisRef.current.raf(time);
+      lenis.raf(time);
       requestAnimationFrame(raf);
     }
+
     requestAnimationFrame(raf);
 
+    // Cleanup on unmount
     return () => {
-      lenisRef.current.destroy();
+      lenis.destroy();
+      lenisRef.current = null;
     };
   }, []);
-
-  const handlePreloaderComplete = () => {
-    setIsLoading(false);
-  };
 
   return (
     <html lang="en">
@@ -49,15 +51,22 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        {isLoading ? (
-          <Preloader onComplete={handlePreloaderComplete} />
-        ) : (
-          <main className="next_load">
-            <Header lenisRef={lenisRef} />
+        <AnimatePresence mode="popLayout">
+          <motion.div
+            key="content"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: DURATION,
+              ease: [0.87, 0.13, 0, 1],
+              delay: DELAY,
+            }}
+          >
+            <Header />
             {children}
-            <Footer lenisRef={lenisRef} />
-          </main>
-        )}
+            <Footer />
+          </motion.div>
+        </AnimatePresence>
       </body>
     </html>
   );
