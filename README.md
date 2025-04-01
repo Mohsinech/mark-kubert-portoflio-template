@@ -1,14 +1,14 @@
-# **Mark Kubert Portfolio Template**
+# **Mia  Kubert Portfolio Template**
 
 ### **Thank You for Your Purchase!**
 
-Thank you for purchasing the **Mark Kubert Portfolio Template**. I’m excited to see how you customize it to showcase your work. This guide will help you set up, customize, and deploy your portfolio with ease. If you need assistance, I offer **100% free setup support** to ensure everything is running smoothly.
+Thank you for purchasing the **Mia  Kubert Portfolio Template**. I’m excited to see how you customize it to showcase your work. This guide will help you set up, customize, and deploy your portfolio with ease. If you need assistance, I offer **100% free setup support** to ensure everything is running smoothly.
 
 ---
 
 ### **Introduction**
 
-The **Mark Kubert Portfolio Template** is a **Next.js 14-powered SPA** crafted for creative professionals. It combines clean design, smooth animations (via **GSAP**), and responsive layouts to provide an engaging user experience. Styling is powered by **Tailwind CSS**, offering you flexibility to customize your template.
+The **Mia Kubert Portfolio Template** is a **Next.js 14-powered SPA** crafted for creative professionals. It combines clean design, smooth animations (via **GSAP**), and responsive layouts to provide an engaging user experience. Styling is powered by **Tailwind CSS**, offering you flexibility to customize your template.
 
 ---
 
@@ -162,4 +162,4 @@ If you need any help or free setup assistance, feel free to reach out!
 - **Email**: milcodestudio@gmail.com
 - **Support Hours**: Monday to Friday, 9 AM - 5 PM (GMT)
 
-Thank you again for choosing the **Mark Kubert Portfolio Template**! 🎉
+Thank you again for choosing the **Mia Kubert Portfolio Template**! 🎉
