@@ -17,7 +17,7 @@ const Footer = ({ lenisRef }) => {
           <h1 className={styles.h1}>Intrested in work together ?</h1>
           <div className={styles.btns_flex_container}>
             <ButtonWhite
-              label="Johndoe@gmail.com"
+              label="miakubert@contact.com"
               //  Add you mail here.
               href="mailto:#add_you_mail"
             />

@@ -42,12 +42,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Mark Kubert — Creative web developer</title>
+        <title>Mia Kubert — Creative web developer</title>
         <link rel="icon" type="icon" href="/favicon.ico" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta
           name="description"
-          content="I'm Mark Kuber, a freelance web developer. Check out this modern, responsive portfolio template built with Next.js, Tailwind CSS, and Lenis for smooth scrolling. Perfect for creative professionals looking to showcase their work online."
+          content="I'm Mia Kuber, a freelance web developer. Check out this modern, responsive portfolio template built with Next.js, Tailwind CSS, and Lenis for smooth scrolling. Perfect for creative professionals looking to showcase their work online."
         />
       </head>
       <body>

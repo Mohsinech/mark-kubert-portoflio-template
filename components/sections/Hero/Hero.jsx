@@ -1,18 +1,14 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styles from "./hero.module.css";
-import { motion } from "framer-motion";
-
-const DURATION = 1;
-const STAGGER = 0.2;
 
 const Hero = () => {
   return (
     <section className={styles.hero_section}>
       <div className={styles.hero_right_col}>
         <div className={styles.h1_div}>
-          <h1 className={styles.h1}>Mark</h1>
+          <h1 className={styles.h1}>Mia</h1>
         </div>
         <div className={styles.h1_div}>
           <h1 className={styles.h1}>Kubert.</h1>
@@ -21,7 +17,7 @@ const Hero = () => {
       {/*  */}
       <div className={styles.hero_left_col}>
         <h1 className={styles.intro}>
-          &bull; Hi, I&apos;m Mark, a creative full-stack web developer
+          &bull; Hi, I&apos;m Mia, a creative full-stack web developer
           passionate about crafting user-friendly and innovative web
           experiences.
         </h1>
